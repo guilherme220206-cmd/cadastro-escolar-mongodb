@@ -1,0 +1,22 @@
+{
+    "name": "aluno/cadastro-escolar-mongodb",
+    "description": "Cadastro de Estudantes, Cursos e Matrículas (N:N) com PHP e MongoDB",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.17 || ^2.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
+    }
+}
